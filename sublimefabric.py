@@ -142,7 +142,7 @@ class BaseFabCommand:
 class FabCustomCommand(BaseFabCommand, sublime_plugin.TextCommand):
     def run(self, edit=None):
         # show input panel, on enter do `self.on_input`
-        self.get_window().show_input_panel("Fabric command", "",
+        self.get_window().show_input_panel("Fabric command: fab ", "",
             self.on_input, None, None)
 
     def on_input(self, command):
@@ -171,20 +171,23 @@ class FabQuickCommand(BaseFabCommand, sublime_plugin.TextCommand):
 
     def _parse_commands(self, output):
         """ parce returned result with commands """
-
         output = output.split('\n')[2:]
         for i, command in enumerate(output):
-
             if not command.strip():
+                # we don't need empty rows
                 continue
+            # split command descrpitions in to words
             command = [c for c in command.split(' ') if c.strip()]
+            # first word is our command, the next words is descrption
             command_name, description = command[0], ' '.join(command[1:])
-
+            # add command and description to list
             self.fab_commands.append([command_name, description.title()])
 
+        # show quick panel with commands
         self.quick_panel(self.fab_commands, self.on_select)
 
     def on_select(self, command_id):
-        """ if user selected one of commands """
-        command = ['fab', self.fab_commands[command_id][0]]
-        self.run_command(command, self.panel)
+        """ if user selected one of commands from quick pannel """
+        if command_id >= 0:
+            command = ['fab', self.fab_commands[command_id][0]]
+            self.run_command(command, self.panel)
