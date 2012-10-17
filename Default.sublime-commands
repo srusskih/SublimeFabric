@@ -1,9 +1,0 @@
-[
-    {
-        "caption": "Fabric: Custom Command",
-        "command": "fab_custom"
-    },{
-        "caption": "Fabric: Quick Command",
-        "command": "fab_quick"
-    }
-]
