@@ -3,15 +3,15 @@ SublimeFabric
 
 Sublime Plugin for simple access to [Fabric](http://docs.fabfile.org/)
 
-![Pallet](http://dl.dropbox.com/u/4418217/SublimeFabric/pallet1.png)
+![Pallet](http://srusskih.github.com/SublimeFabric/images/pallet1.png)
 
 You can run command directly from editor..
 
-![Fabric: Quick command](http://dl.dropbox.com/u/4418217/SublimeFabric/pallet2.png)
+![Fabric: Quick command](http://srusskih.github.com/SublimeFabric/images/pallet2.png)
 
 ..or call custom fabric command 
 
-![Fabric: Custom Command](http://dl.dropbox.com/u/4418217/SublimeFabric/custom_command.png)
+![Fabric: Custom Command](http://srusskih.github.com/SublimeFabric/images/custom_command.png)
 
 
 Installation
