@@ -1,7 +1,7 @@
 SublimeFabric
 -------------
 
-Sublime Plugin for more easy and fast deploy
+Sublime Plugin for simple access to [Fabric](http://docs.fabfile.org/)
 
 ![Pallet](http://dl.dropbox.com/u/4418217/SublimeFabric/pallet1.png)
 
