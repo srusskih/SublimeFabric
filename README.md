@@ -3,15 +3,15 @@ SublimeFabric
 
 Sublime Plugin for more easy and fast deploy
 
-.. image:: http://dl.dropbox.com/u/4418217/SublimeFabric/pallet1.png
+![Pallet](http://dl.dropbox.com/u/4418217/SublimeFabric/pallet1.png)
 
 You can run command directly from editor..
 
-.. image:: http://http://dl.dropbox.com/u/4418217/SublimeFabric/pallet2.png
+![Fabric: Quick command](http://dl.dropbox.com/u/4418217/SublimeFabric/pallet2.png)
 
 ..or call custom fabric command 
 
-.. image:: http://dl.dropbox.com/u/4418217/SublimeFabric/custom_command.png
+![Fabric: Custom Command](http://dl.dropbox.com/u/4418217/SublimeFabric/custom_command.png)
 
 
 Installation
